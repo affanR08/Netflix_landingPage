@@ -1,0 +1,351 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.background-banner {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.514),
+      rgba(0, 0, 0, 0.767)
+    ),
+    url(backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.home-content {
+  height: 80vh;
+ 
+}
+
+.home-content h1 {
+  color: white;
+  font-size: 3.125rem;
+  font-weight: bold;
+  padding-left: 54px;
+}
+
+.home-content p {
+  font-size: 18px;
+}
+
+.footer-custom ul li {
+  list-style: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+#channel {
+  width: 400px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+.form-control::placeholder {
+  color: #ffffff; /* abu-abu Bootstrap */
+  opacity: 1;
+}
+.lang{
+    background-color: gray;
+    color: white;
+}
+.btn-group{
+    background-color: gray;
+    color: white;
+}
+.home p{
+    text-align: center;
+}
+.get{
+    height: 3.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.curved-border {
+  position: absolute;
+  
+  left: 0;
+  width: 100%;
+  height: 60px;
+  float: left;
+  margin-top: -4vh;
+  border-top: red 3px solid;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 162, 255, 0.274),
+      rgb(0, 0, 0)
+    );
+  border-top-left-radius: 150% 150px;
+  border-top-right-radius: 150% 150px;
+  
+  z-index: 1;
+}
+body{
+    background-color: black!important;
+}
+
+/* Container scrollable film */
+#filmScroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+#filmScroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+.film-card {
+  flex: 0 0 auto;
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.film-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Accordion custom colors */
+/* Change header background and text color */
+.accordion .accordion-button {
+  background-color: rgba(0, 0, 0, 0.06)!important; /* semi-transparent light (change as needed) */
+  color: #000000!important;
+}
+
+/* When collapsed (not expanded) bootstrap adds .collapsed on button */
+.accordion .accordion-button.collapsed {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #000000;
+}
+
+/* Accordion body background */
+.accordion .accordion-body {
+  background-color: rgba(0, 0, 0, 0.02)!important; /* very light (change as needed) */
+  color: #000000;
+}
+
+/* Optional: remove border to blend with dark theme */
+.accordion .accordion-item {
+  border: none;
+}
+
+/* Custom accordion icon and text */
+.accordion-button {
+  font-size: 1.5rem !important; /* Increase font size */
+  padding: 1.5rem !important; /* Increase padding for larger touch area */
+  color: #ffffff !important; /* White text color */
+}
+
+/* Add spacing between accordion items */
+.accordion-item {
+  margin-bottom: 8px !important;
+}
+
+/* Ensure text stays white in all states */
+.accordion-button.collapsed {
+  color: #ffffff !important;
+}
+
+.accordion-button::after {
+  width: 2rem !important; /* Larger icon */
+  height: 2rem !important;
+  background-size: 2rem !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2'%3e%3cpath d='M8 3v10M3 8h10'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2'%3e%3cpath d='M3 3l10 10M13 3L3 13'/%3e%3c/svg%3e") !important;
+  transform: rotate(0deg) !important;
+}
+
+/* Increase accordion body text size */
+.accordion-body {
+  font-size: 1.25rem !important;
+  padding: 1.5rem !important;
+}
+
+  .film-card:hover {
+    transform: scale(1.05);
+  }
+
+  .ranking-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    position: absolute;
+    bottom: -20px;
+    float: left;
+    z-index: 1000;
+    left: 15%;
+    transform: translateX(-50%);
+  }
+
+.container{
+  min-width: 85%;
+}
+.card{
+  min-height: 27.5vh;
+  background-image: linear-gradient(
+      120deg,
+      #1b1c39,
+      #210e17
+    );
+    z-index: 1;
+    
+}
+.icon{
+  float: right;
+  align-self: flex-end;
+  margin-top: 5vh;
+}
+.custom-accordion .accordion-item,
+  .custom-accordion .accordion-button,
+  .custom-accordion .accordion-body {
+    background-color: #444444; /* abu-abu */
+    color: #ffffff; /* putih */
+  }
+  
+.heading-custom{
+  font-size: 70px!important;
+  margin-left: -5vw!important;
+}
+
+/* Responsive rules: tablet and mobile */
+@media (max-width: 768px) {
+  /* Heading */
+  .heading-custom{
+    font-size: 48px !important;
+    margin-left: -2vw !important;
+  }
+
+  /* Hero input and button stack nicely */
+  #channel{
+    width: 100% !important;
+    max-width: 520px;
+  }
+  .input-div{
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .get{
+    width: 100%;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  /* Film cards shrink a bit to fit */
+  .film-card{
+    width: 160px;
+  }
+
+  /* Smaller scroll buttons */
+  .position-relative > .btn.position-absolute{
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .ranking-number{
+    font-size: 3.5rem;
+    bottom: -14px;
+    left: 18%;
+  }
+
+  /* Accordion adjustments */
+  .accordion-button{
+    font-size: 1.25rem !important;
+    padding: 1.2rem !important;
+  }
+  .accordion-body{
+    font-size: 1rem !important;
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile: smaller heading and centered */
+  .heading-custom{
+    font-size: 34px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  /* Make hero input full width and stack vertically */
+  #channel{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .input-div{
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .get{
+    width: 100% !important;
+  }
+
+  /* Film cards smaller on mobile */
+  .film-card{
+    width: 140px;
+  }
+
+  /* Reduce scroll button footprint to avoid covering content */
+  .position-relative > .btn.position-absolute{
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ranking-number{
+    font-size: 2.5rem;
+    bottom: -10px;
+    left: 20%;
+  }
+
+  /* Accordion compact */
+  .accordion-button{
+    font-size: 1.05rem !important;
+    padding: 0.9rem !important;
+  }
+  .accordion-body{
+    font-size: 0.95rem !important;
+    padding: 0.8rem !important;
+  }
+  .mobile{
+    margin-left: -8vw;
+    width: 110vw!important;
+  }
+  .logo{
+    margin-left: -3vw;
+    padding-right: 0vw;
+  }
+  .lang{
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.5rem !important;
+    padding-right: 0rem;
+  }
+  .sign{
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.5rem !important;
+    margin-left: 0rem;
+  }
+  .curved-border{
+    height: 40px;
+    border-top-left-radius: 150% 50px;
+    border-top-right-radius: 150% 50px;
+    margin-top: -6vh;
+  }
+}
