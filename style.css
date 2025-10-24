@@ -50,7 +50,7 @@
   padding-left: 10px;
 }
 .form-control::placeholder {
-  color: #ffffff; /* abu-abu Bootstrap */
+  color: #ffffff; 
   opacity: 1;
 }
 .lang{
@@ -93,18 +93,17 @@ body{
     background-color: black!important;
 }
 
-/* Container scrollable film */
 #filmScroll {
   display: flex;
   gap: 24px;
   overflow-x: auto;
   padding-bottom: 10px;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 #filmScroll::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Webkit */
+  display: none;
 }
 
 .film-card {
@@ -120,49 +119,40 @@ body{
   border-radius: 8px;
 }
 
-/* Accordion custom colors */
-/* Change header background and text color */
 .accordion .accordion-button {
-  background-color: rgba(0, 0, 0, 0.06)!important; /* semi-transparent light (change as needed) */
+  background-color: rgba(0, 0, 0, 0.06)!important; 
   color: #000000!important;
 }
 
-/* When collapsed (not expanded) bootstrap adds .collapsed on button */
 .accordion .accordion-button.collapsed {
   background-color: rgba(0, 0, 0, 0.03);
   color: #000000;
 }
 
-/* Accordion body background */
 .accordion .accordion-body {
-  background-color: rgba(0, 0, 0, 0.02)!important; /* very light (change as needed) */
+  background-color: rgba(0, 0, 0, 0.02)!important; 
   color: #000000;
 }
 
-/* Optional: remove border to blend with dark theme */
 .accordion .accordion-item {
   border: none;
 }
-
-/* Custom accordion icon and text */
 .accordion-button {
-  font-size: 1.5rem !important; /* Increase font size */
-  padding: 1.5rem !important; /* Increase padding for larger touch area */
-  color: #ffffff !important; /* White text color */
+  font-size: 1.5rem !important; 
+  padding: 1.5rem !important; 
+  color: #ffffff !important; 
 }
 
-/* Add spacing between accordion items */
 .accordion-item {
   margin-bottom: 8px !important;
 }
 
-/* Ensure text stays white in all states */
 .accordion-button.collapsed {
   color: #ffffff !important;
 }
 
 .accordion-button::after {
-  width: 2rem !important; /* Larger icon */
+  width: 2rem !important; 
   height: 2rem !important;
   background-size: 2rem !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2'%3e%3cpath d='M8 3v10M3 8h10'/%3e%3c/svg%3e") !important;
@@ -173,7 +163,6 @@ body{
   transform: rotate(0deg) !important;
 }
 
-/* Increase accordion body text size */
 .accordion-body {
   font-size: 1.25rem !important;
   padding: 1.5rem !important;
@@ -226,7 +215,61 @@ body{
   margin-left: -5vw!important;
 }
 
-/* Responsive rules: tablet and mobile */
+
+@media (max-width: 1280px) {
+
+  .container {
+    min-width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  .film-card {
+    width: 180px;
+  }
+  
+  #filmScroll {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+
+  .heading-custom {
+    font-size: 60px !important;
+    margin-left: -3vw !important;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #channel {
+    width: 360px;
+  }
+
+  .get {
+    padding: 0.8rem 2rem;
+  }
+
+  .card {
+    min-height: 25vh;
+  }
+
+  .icon {
+    margin-top: 4vh;
+  }
+  .accordion-button {
+    font-size: 1.3rem !important;
+  }
+
+  .accordion-body {
+    font-size: 1.1rem !important;
+  }
+}
+
 @media (max-width: 768px) {
   /* Heading */
   .heading-custom{
@@ -234,7 +277,6 @@ body{
     margin-left: -2vw !important;
   }
 
-  /* Hero input and button stack nicely */
   #channel{
     width: 100% !important;
     max-width: 520px;
@@ -249,12 +291,10 @@ body{
     padding-bottom: 0.85rem;
   }
 
-  /* Film cards shrink a bit to fit */
   .film-card{
     width: 160px;
   }
 
-  /* Smaller scroll buttons */
   .position-relative > .btn.position-absolute{
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
@@ -266,7 +306,6 @@ body{
     left: 18%;
   }
 
-  /* Accordion adjustments */
   .accordion-button{
     font-size: 1.25rem !important;
     padding: 1.2rem !important;
@@ -278,14 +317,12 @@ body{
 }
 
 @media (max-width: 480px) {
-  /* Mobile: smaller heading and centered */
   .heading-custom{
     font-size: 34px !important;
     margin-left: 0 !important;
     text-align: center;
   }
 
-  /* Make hero input full width and stack vertically */
   #channel{
     width: 100% !important;
     max-width: 100% !important;
@@ -298,12 +335,10 @@ body{
     width: 100% !important;
   }
 
-  /* Film cards smaller on mobile */
   .film-card{
     width: 140px;
   }
 
-  /* Reduce scroll button footprint to avoid covering content */
   .position-relative > .btn.position-absolute{
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
@@ -314,8 +349,6 @@ body{
     bottom: -10px;
     left: 20%;
   }
-
-  /* Accordion compact */
   .accordion-button{
     font-size: 1.05rem !important;
     padding: 0.9rem !important;
